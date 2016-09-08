@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/loginstyles.css">
+    <link href="font/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Login Form -->
+    <div class="formWrapper">
+      <form name = "login" method="POST" action = "LoginController">
+
+      <!-- input Email -->
+        <div class="group">
+          <input type="text" name = "email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required />
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Email</label>
+        </div>
+
+      <!-- input Password -->  
+        <div class="group">
+          <input type="password" name = "password/>
+          <span class="highlight"></span><span class="bar"></span>
+          <label>Password</label>
+        </div>
+
+      <!-- Button Submit -->
+        <button type="submit" class="button buttonBlue"> Submit
+          <div class="ripples buttonRipples">
+            <span class="ripplesCircle"></span>
+          </div>
+        </button>
+
+        <!-- Registration Card -->
+        <div class = "registerCard">
+          <form name="register" method="POST" action="RegistrationController">
+            
+            <!-- Nick Name -->
+            <div class="group">
+              <input type="text" name = "email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required />
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Nick Name</label>
+            </div>
+
+            <!-- input Email -->
+            <div class="group">
+              <input type="text" name = "email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required />
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Email</label>
+            </div>
+
+          <!-- input Password -->  
+            <div class="group">
+              <input type="password" name = "password/>
+              <span class="highlight"></span><span class="bar"></span>
+              <label>Password</label>
+            </div>
+
+            <div class="group">
+              <input type="password" name = "password/>
+              <span class="highlight"></span><span class="bar"></span>
+              <label>Confirm Password</label>
+            </div>
+
+          <!-- Button Submit -->
+            <button type="submit" class="button buttonBlue"> Submit
+              <div class="ripples buttonRipples">
+                <span class="ripplesCircle"></span>
+              </div>
+            </button>
+          
+          </form>
+        </div>
+
+      </form>
+
+  <!-- Register Button -->
+      <div class = "registerButton" onclick="animateFunction()">
+        <i class="fa fa-plus" aria-hidden="true"></i>      
+      </div>
+    </div>
+    <script type="text/javascript" src = "js/jQuery/jquery.min.js"></script>
+    <script type="text/javascript" src = "js/LoginController.js"></script>
+</body>
+</html>
